@@ -322,6 +322,22 @@ a:hover {
   max-width: 34rem;
 }
 
+.game-slot .btn {
+  margin-top: 1.25rem;
+}
+
+.game-slot .art-phone {
+  aspect-ratio: 9 / 16;
+}
+
+.game-slot .art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px;
+}
+
 /* ---------- about ---------- */
 
 .about p {
