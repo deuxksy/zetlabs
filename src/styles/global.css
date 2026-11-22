@@ -338,6 +338,81 @@ a:hover {
   border-radius: 8px;
 }
 
+.game-slot .art-terminal {
+  aspect-ratio: auto;
+  min-height: 11rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  letter-spacing: 0;
+  font-weight: 400;
+  padding: 0;
+  overflow: hidden;
+}
+
+.art-terminal .term-bar {
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.65rem 0.9rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.art-terminal .term-bar span {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: var(--border);
+}
+
+.art-terminal .term-bar span:nth-child(1) { background: #ff5f57; }
+.art-terminal .term-bar span:nth-child(2) { background: #febc2e; }
+.art-terminal .term-bar span:nth-child(3) { background: #28c840; }
+
+.art-terminal .term-body {
+  padding: 1rem 1.1rem;
+  font-size: 0.8rem;
+  line-height: 1.9;
+  text-align: left;
+}
+
+.art-terminal .term-path {
+  color: var(--muted);
+}
+
+.art-terminal .term-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.75rem;
+  align-items: center;
+}
+
+.art-terminal .seg-branch { color: var(--accent); }
+.art-terminal .seg-model { color: #a5b4fc; }
+.art-terminal .seg-tokens { color: var(--text); }
+.art-terminal .seg-quota { color: #86efac; }
+.art-terminal .seg-ticket { color: #fcd34d; }
+.art-terminal .seg-active { color: #86efac; }
+
+.art-terminal .seg-cli {
+  color: #1a0e04;
+  background: #f59e0b;
+  border-radius: 3px;
+  padding: 0 0.3rem;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.art-terminal .term-tray {
+  margin-top: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface-2);
+  padding: 0.6rem 0.8rem;
+  display: grid;
+  gap: 0.15rem;
+}
+
 /* ---------- about ---------- */
 
 .about p {
